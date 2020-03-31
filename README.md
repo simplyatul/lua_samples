@@ -17,6 +17,9 @@ Installed rocks
 luafilesystem
    1.7.0-2 (installed) - /usr/lib64/luarocks/rocks
 
+luaxml
+   101012-2 (installed) - /usr/lib64/luarocks/rocks
+
 penlight
    1.7.0-1 (installed) - /usr/lib64/luarocks/rocks
 
