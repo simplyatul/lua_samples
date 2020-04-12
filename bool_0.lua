@@ -1,10 +1,12 @@
 local str = "abc "..tostring(false).." d"
-print(str) 
+print(str) --> abc false d
 
-local f = false
+local f = true
 str = "abc "..tostring(f).." d"
-print(str) 
+print(str) --> abc true d
 
 local cnt = tostring(nil)
-print(cnt)
+print(cnt) --> nil
+
+
 
