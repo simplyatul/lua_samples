@@ -14,4 +14,5 @@ print("Time: ", os.time())
 local temp =  os.date("*t", os.time())
 
 require 'pl.pretty'.dump(temp)
-
+print('-----------------------')
+print(tostring(require 'pl.pretty'.write(temp)))
