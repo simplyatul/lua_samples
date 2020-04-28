@@ -27,7 +27,7 @@ y,m,d,h,mi=currDate:match(dateTimeRegEx)
 cy, cm, cd, ch, cmi = tonumber(y), tonumber(m), tonumber(d), tonumber(h), tonumber(mi)
 print(cy, cm, cd, ch, cmi)
 
-print('Checking if '.. 
+print('Incorrect Method: Checking if '.. 
 	cy .. '-' ..cm.. '-' ..cd .. -- currDate
 	' is between ' ..
 	sy .. '-' ..sm.. '-' ..sd .. -- startDate
@@ -51,11 +51,11 @@ print('Ans: ', ans)
 
 -- This is the proper way ...
 
-sD = os.time({ year = sy, month = sm, day = sd })
-eD = os.time({ year = ey, month = em, day = ed })
-cD = os.time({ year = cy, month = cm, day = cd })
+sD = os.time({ year = sy, month = sm, day = sd, hour = 0, min = 0, sec = 0 })
+eD = os.time({ year = ey, month = em, day = ed, hour = 0, min = 0, sec = 0 })
+cD = os.time({ year = cy, month = cm, day = cd, hour = 0, min = 0, sec = 0 })
 
-print('Checking if '..cD..' is between '..sD..' and '..eD)
+print('Correct Method: Checking if '..cD..' is between '..sD..' and '..eD)
 
 ans=false
 if(cD >= sD and cD <= eD) then
